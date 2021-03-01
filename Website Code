@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <h1>Classification</h1>
+
+    <form id="classificationMenu" method="GET" action="./">
+
+    <table><tbody><tr><td>
+    <strong style="font-size:20px;">School Year:</strong><br>
+    <select style="font-size:17px;width:150px" name="schoolYear" id="schoolYear" class="form-control">
+    <option></option>
+    <option value="2022">2022-2023</option>
+    <option value="2021">2021-2022</option>
+    <option value="2020" selected="">2020-2021</option>
+    <option value="2019">2019-2020</option>
+    
+    </select>
+    </td>
+    <td>
+    <strong style="font-size:20px;">Sport:</strong><br>
+    <select style="font-size:17px;width:200px" name="sportid" id="sportid" class="form-control">
+    <option>-- select a sport --</option>
+    <option value="1">Baseball</option>
+    <option value="2">Basketball</option>
+    <option value="3">Cross Country</option>
+    <option value="4">Football</option>
+    <option value="5">Golf</option>
+    <option value="6">Gymnastics</option>
+    <option value="7">Soccer</option>
+    <option value="8">Softball</option>
+    <option value="9">Swimming & Diving</option>
+    <option value="10">Tennis</option>
+    <option value="11">Track & Field</option>
+    <option value="12">Volleyball</option>
+    <option value="13">Wrestling</option>
+    <option value="14">Unified Flag Football</option>
+    <option value="15">Unified Track & FIeld</option>
+    
+    </select>
+    </td></tr></tbody></table>
+    <input type="hidden" name="type" value="high">
+    </form>
+    
+    
+
+    
+</select>
+<br></br>
+    <a href="/me.html">My other page</a>
+  </body>
+</html>
