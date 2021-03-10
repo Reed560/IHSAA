@@ -6,21 +6,27 @@
 </head>
 <body>
 <h1>Classification</h1>
-
 <form id="classificationMenu" method="GET" action="./">
-
   <table>
     <tbody>
     <tr>
       <td>
         <strong style="font-size:20px;">School Year:</strong><br>
-        <select style="font-size:17px;width:150px" name="schoolYear" id="schoolYear" class="form-control">
-          <option></option>
+        <select style="font-size:17px;width:195px" name="schoolYear" id="schoolYear" class="form-control">
+          <option>--select a school year--</option>
           <option value="2022">2022-2023</option>
           <option value="2021">2021-2022</option>
-          <option value="2020" selected="">2020-2021</option>
+          <option value="2020">2020-2021</option>
           <option value="2019">2019-2020</option>
-
+        </select>
+      </td>
+      <td>
+        <strong style="font-size:20px;">Gender:</strong><br>
+        <select style="font-size:17px;width:165px" name="schoolGender" id="schoolGender" class="form-control">
+          <option>--select a gender--</option>
+          <option value="Boys">Boys</option>
+          <option value="Girls">Girls</option>
+          <option value="CoEd">CoEd</option>
         </select>
       </td>
       <td>
@@ -42,16 +48,59 @@
           <option value="13">Wrestling</option>
           <option value="14">Unified Flag Football</option>
           <option value="15">Unified Track & FIeld</option>
-
         </select>
       </td>
+      <td>
+        <strong style="font-size:20px;">Class:</strong><br>
+        <select style="font-size:17px;width:150px" name="schoolClass" id="schoolClass" class="form-control">
+          <option>--select a class--</option>
+          <option value="A">A</option>
+          <option value="2A">2A</option>
+          <option value="3A">3A</option>
+          <option value="4A">4A</option>
+          <option value="5A">5A</option>
+          <option value="6A">6A</option>
+        </select>
+      </td>
+      <td>
+      <strong style="font-size:20px;"># of Sectionals:</strong><br>
+        <input type="text" id="groupText" name="groupText"><br>
+      </td>
+   
+      <td>
+
+        <strong style="font-size:45px;width:150px"><button>Enter</button></strong><br>
+      </td>
+
+      <td>
+ 
+        <strong style="font-size:45px;width:500px"><button>Tournament Generator</button></strong>
+     
+      </td>
+
     </tr>
     </tbody>
   </table>
   <input type="hidden" name="type" value="high">
+
+  <a href="https://www.ihsaa.org/">
+    <img alt="IHSAA Logo" src="https://www.ihsaa.org/Portals/_default/skins/indhsaa/images/indhsaa.png">
+    </a>
+
 </form>
-
-
-<a href="/me.html">My other page</a>
 </body>
+<footer>
+  <b><h2> Sectionals</h2></b>
+  <strong style="font-size:18px; width:200px">
+<p><i>Sectional 1</i></p>
+<p><i>Sectional 2</i></p>
+<p><i>Sectional 3</i></p>
+<p><i>Sectional 4</i></p>
+<p><i>Sectional 5</i></p>
+<p><i>Sectional 6</i></p>
+<p><i>Sectional 7</i></p>
+<p><i>Sectional 8</i></p>
+</strong>
+
+</footer>
 </html>
