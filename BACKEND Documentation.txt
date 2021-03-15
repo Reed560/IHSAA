@@ -1,0 +1,27 @@
+(3/15/21)
+**************************************************************************
+Hey y'all, it's Adam. Here are the backend goals going forward, as transposed by Chloe: 
+
+******************************SPRINT 3 Goals******************************
+
+From zoom dm's:
+To-dos: 1. make a testing ground separate from the project but put it in the git hub
+2. Figure out how to use typescript to query w/ angular
+3. determine how ang understands queries as components
+4. "idea: let's start by running k-means in typescript on our data to see whether we think the 
+clusters are sufficient or if we'll need graph spectral to get clusters that aren't garbage so we can 
+better formulate a plan. graph spectral might not be possible with queries, so we won't want to do the work 
+with queries only to find out that isn't going to work"
+Tentative Goals/goal adjacent statments:
+- Run k-means++ in typescript on actual data to determine whether it is sufficient
+- If it's insufficient, program spectral clustering in typescript
+- If it is sufficient, figure out how to run it with queries
+- If the k-means in the paper isn't ++, look into lloyd's algorithm
+- Figure out how those queries will work in Angular
+***************************************************************************
+
+(3/15/21)
+***************************************************************************
+Merged the GoldinGuy K-Means-TS gitHub with our project (I think). For future changes, I would like us to 
+make a plain English note of what we did before we git push the code. Of course, it could be something really 
+simple and for code changes, put comments around what you change or add. -Adam
