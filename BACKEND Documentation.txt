@@ -24,4 +24,13 @@ Tentative Goals/goal adjacent statments:
 ***************************************************************************
 Merged the GoldinGuy K-Means-TS gitHub with our project (I think). For future changes, I would like us to 
 make a plain English note of what we did before we git push the code. Of course, it could be something really 
-simple and for code changes, put comments around what you change or add. -Adam
+simple and for code changes, put comments around what you change or add. ~Adam
+
+(3/16/21)
+***************************************************************************
+There was an error in my initial push, so the KS-MEANS-TS folder did not make an appearnce as intended.
+The node_modules folder did show on the repo after some late-night troubleshooting.
+I used this terminal command: 'npm i --save-dev @types/node'.
+What I have and what I pushed should match, but they do not. Will invesitgate further.
+On my rig, the KS-MEANS-TS folder is there. Also, I realized that gitHub has you explain the 
+changes you make anyway. ~Adam
