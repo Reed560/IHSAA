@@ -11,6 +11,7 @@ import { ClassSizeDDComponent } from './class-size-dd/class-size-dd.component';
 import { DatabaseComponentComponent } from './database-component/database-component.component';
 import { AlgorithmTYPESCRIPTComponent } from './algorithm-typescript/algorithm-typescript.component';
 import { SectionalGroupComponent } from './sectional-group/sectional-group.component';
+import { SectionalBoxesComponent } from './sectional-boxes/sectional-boxes.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { SectionalGroupComponent } from './sectional-group/sectional-group.compo
     ClassSizeDDComponent,
     DatabaseComponentComponent,
     AlgorithmTYPESCRIPTComponent,
-    SectionalGroupComponent
+    SectionalGroupComponent,
+    SectionalBoxesComponent
   ],
   imports: [
     BrowserModule,
