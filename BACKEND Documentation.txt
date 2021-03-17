@@ -34,3 +34,9 @@ I used this terminal command: 'npm i --save-dev @types/node'.
 What I have and what I pushed should match, but they do not. Will invesitgate further.
 On my rig, the KS-MEANS-TS folder is there. Also, I realized that gitHub has you explain the 
 changes you make anyway. ~Adam
+
+(3/17/21)
+***************************************************************************
+We were able to get all of the files from Goldin Guy's k-means onto the git repo.
+Adam still has some funky stuff going on with his local machine, but Sasha and I have everything.
+Next step is to run this on some real data! ~chloe
