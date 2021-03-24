@@ -40,3 +40,35 @@ changes you make anyway. ~Adam
 We were able to get all of the files from Goldin Guy's k-means onto the git repo.
 Adam still has some funky stuff going on with his local machine, but Sasha and I have everything.
 Next step is to run this on some real data! ~chloe
+
+(3/22/21)
+***************************************************************************
+Hey y'all, it's Adam. Here is what happened in today's meeting.
+Sasha demoed some code and pushed it to GitHub. As the backend team,
+we will take a closer look at all that and see about how we can knock out our goals:
+1.Find a way to save the k-means ++ output as a text file
+2. Make an Excel Spreadsheet with the schools and their corresponding number
+3. Validity Assessment (Compare these runs to past examples)
+4. Figure out in plain English what we need: 
+    4a. End-users will send a 'request': class, gender, sport, and # of sectionals... 
+        How do we process those variables in the k-means++ code?
+    4b. Talk it out with Front-End. Sooner we all get on the same page, the better.
+5. Work with Kam on database and see how we can SQL query in typescript
+   /if we want to also just use data hosted on there versus having it already in ts.
+6. Elevator Pitch: Talk about these changes intelligently and why we chose the direction that we did.
+7. Poster board: Be thinking about how ours should look. Will put examples from years past in the Discord.
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+In general, this is what we want:
+End-user specifies the data: "class, gneder, sport, # of sectionals, etc." --> 
+data is grabbed from database --> 
+calculation is ran on typescript--> 
+end-users receive: sectional groups, teams in those groups, and k-means graphic (and the option to download it all?).
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+(3/22/21)
+***************************************************************************
+Created the 'Sectional Icons' folder and added 21 differently colored dot PNGs. They will be used for the 
+"key" on our k-means graphic and will correspond to the location of a school and its sectional color. 
+We also need to be cognizant of the fact that when we specify 8 groups (sectionals), the program will make
+9 groups (0-8). Need to rectify this/ compensate for it once we start taking input from end-users. ~Adam
