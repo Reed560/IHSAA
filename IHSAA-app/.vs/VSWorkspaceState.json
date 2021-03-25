@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app"
+    "\\src\\app",
+    "\\src\\app\\algorithm-typescript",
+    "\\src\\app\\class-size-dd",
+    "\\src\\app\\gender-dd",
+    "\\src\\app\\school-year-dd"
   ],
-  "SelectedNode": "\\src\\app\\school-year-dd",
   "PreviewInSolutionExplorer": false
 }
