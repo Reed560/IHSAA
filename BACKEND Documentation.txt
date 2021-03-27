@@ -72,3 +72,22 @@ Created the 'Sectional Icons' folder and added 21 differently colored dot PNGs. 
 "key" on our k-means graphic and will correspond to the location of a school and its sectional color. 
 We also need to be cognizant of the fact that when we specify 8 groups (sectionals), the program will make
 9 groups (0-8). Need to rectify this/ compensate for it once we start taking input from end-users. ~Adam
+
+(3/24/21)
+***************************************************************************
+Hey y'all, it's Adam. Here is what happened in today's meeting:
+We aksed the question, "How can we best have our data organized so the algorithm can 'talk' with it?"
+Some options we came up with:
+1. Text file within the project that is referenced. <-- Leaning toward this because then we don't have 
+to worry about "logic gates" issue a la database screwy-ness.
+2. Take information from a spreadsheet hosted on the database in real-time.
+
+What we ended up doing:
+Dalton made an Excel spreadhseet with (most) of the school names, and their sport classifications. 
+Then he saved it as a text document and pushed it to the repo.
+Still trying to iron out the kinks/ add information.
+Kam posted the school coordinates in the Discord.
+
+For Monday:
+Research using typescript to pull IDs.
+Research using typescript for SQL queries.
