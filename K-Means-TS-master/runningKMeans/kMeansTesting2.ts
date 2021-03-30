@@ -42,11 +42,11 @@ const try2 = new Array(k).fill([]);
 //}
 //console.log(try2);
 
-const try3 = new Array();
+export const try3 = new Array();
 for (let i = 0; i < k; i++)
     try3[i] = new Array();
 
-console.log(try3);
+//console.log(try3);
 
 for(let i = 0; i<indexes.length; i++){
     let group = indexes[i];
@@ -54,4 +54,4 @@ for(let i = 0; i<indexes.length; i++){
     try3[group].push(dataArray[i]);
 }
 
-console.log(try3);
+//console.log(try3);
