@@ -91,3 +91,11 @@ Kam posted the school coordinates in the Discord.
 For Monday:
 Research using typescript to pull IDs.
 Research using typescript for SQL queries.
+
+(3/29/21)
+***************************************************************************
+Chloe got python program to work for plotting the points. This is to validate the results of the K Means++ algorithm we've found.
+I have updated the groupedArr ( TRY3 ) that should be correctly grouped now.
+Next step, IF algorithm works correctly, is to match centroids to host school.
+Then it is possible to get the (physical) distances of schools in cluster from the host school.
+Note: we are currently working with ALL schools--this will (almost) never be the case. -Sasha
