@@ -13,7 +13,7 @@ var kmeans1: KMeans = KMEANS(dataArray, k, "kmeans++");
 export const indexes = kmeans1.indexes;
 //console.log(indexes);
 export const centroids = kmeans1.centroids;
-//console.log(centroids);
+// console.log(centroids);
 
 //d2 will always be k (centroids)
 //d1 will be roughly 500/d1 for safety
@@ -54,4 +54,4 @@ for(let i = 0; i<indexes.length; i++){
     try3[group].push(dataArray[i]);
 }
 
-//console.log(try3);
+// console.log(try3);
