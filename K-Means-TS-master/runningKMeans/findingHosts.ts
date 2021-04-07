@@ -1,9 +1,7 @@
-import {try3} from './kMeansTesting2';
+import {sortedArray} from './kMeansTesting2';
 import {centroids} from './kMeansTesting2';
 
-//console.log(try3);
-//console.log(centroids);
-
+//finds schools closest to centroid in each cluster
 function closest(needle, haystack) {
     return haystack.reduce((a, b) => {
         let aDiff = Math.abs(a - needle);
@@ -17,10 +15,11 @@ function closest(needle, haystack) {
     });
 }
 
-export const host = new Array(20);
 
-for(let i = 0; i<host.length; i++){
-    host[i] = closest(centroids[i], try3[i]);
+export const hostArray = new Array(20);
+
+for(let i = 0; i<hostArray.length; i++){
+    hostArray[i] = closest(centroids[i], sortedArray[i]);
 }
 
-console.log(host);
+//console.log(host);
