@@ -99,3 +99,13 @@ I have updated the groupedArr ( TRY3 ) that should be correctly grouped now.
 Next step, IF algorithm works correctly, is to match centroids to host school.
 Then it is possible to get the (physical) distances of schools in cluster from the host school.
 Note: we are currently working with ALL schools--this will (almost) never be the case. -Sasha
+
+(4/7/21)
+***************************************************************************
+Cleaned up code in K means folder that was about the longlat txt file and setting up groups of schools and host schools.
+NOTE FOR NEXT TEAM: In the K-Means-TS-master, in runningKMeans, kMeansTesting2.ts runs the k means++ on schools. Most important.
+Needs connection to front end. For grouping algorithm, we used: https://github.com/GoldinGuy/K-Means-TS
+Validity of grouping algorithm and locating host schools not determined. Ineffective to apply for all schools.
+
+Currently looking into getting driving distances. Google Maps API is paid and has limits if we don't have money.
+OSRM is free and may be an alternative. Researching that currently. -Sasha
