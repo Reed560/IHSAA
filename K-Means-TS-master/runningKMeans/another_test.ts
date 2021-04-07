@@ -1,6 +1,10 @@
 import KMEANS from "../kmeans";
 import { KMeans, Vectors } from "../kmeans";
 
+
+//This is a test on k means++
+//All data points put it, do not use since we would want this data imported
+//We import long/lat points from a text file in dataCoordsArr
 const input_data: Vectors = [
 	[ 38.7102179, -85.471719 ],
 	[ 39.88570199999999, -86.148265 ],
