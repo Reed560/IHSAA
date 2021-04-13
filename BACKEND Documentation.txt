@@ -109,3 +109,18 @@ Validity of grouping algorithm and locating host schools not determined. Ineffec
 
 Currently looking into getting driving distances. Google Maps API is paid and has limits if we don't have money.
 OSRM is free and may be an alternative. Researching that currently. -Sasha
+
+(4/11/21)
+***************************************************************************
+Met with Grant B. over the weekend to discuss how the algorithm may be ran through the front-end.
+(1). We think the answer might be as simple as moving the KS-Means-TS-master folder to its own spot in the 
+src file. We will have to flesh that out more. We can create a matching CSS component to know if it runs or not.
+
+(2) We want to test how changing something on the frontend will change something on the backend through the creation of a 
+variable. Nothing super complex, just a way to show how FE and BE can 'talk' to each other. 
+
+In summary:
+(1). Get algorithm (and everything needed for the algorithm) to run in the src code.
+(2). Make a sectional variable manipulated by end-users to change the # of sectionals (groups) read into the algorithm.
+
+Further testing is needed to verify (1) and then move to (2). ~Adam
