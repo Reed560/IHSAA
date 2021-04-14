@@ -124,3 +124,14 @@ In summary:
 (2). Make a sectional variable manipulated by end-users to change the # of sectionals (groups) read into the algorithm.
 
 Further testing is needed to verify (1) and then move to (2). ~Adam
+
+(4/13/21)
+***************************************************************************
+Dalton released the .csv file for to help with validity testing.
+
+"K-Means-TS-master" was already duplicated into "app" subfolder, but now I wonder if having two "K-Means-TS-master" is
+redundant. Just having the one "K-Means-TS-master" in the project should be fine. 
+Makes the most sense to live in "app" becasue that's where the algorithm will be running from.
+
+Made the variable for number of sectionals "sectionalNums". Now it's just a matter of reading-in the drop down menu input.
+Change was compiled successfully and pushed, but another_test.ts (in "app") was not reran with the change. ~Adam

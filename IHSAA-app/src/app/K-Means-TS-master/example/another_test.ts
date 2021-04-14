@@ -1,6 +1,13 @@
 import KMEANS from "../kmeans";
 import { KMeans, Vectors } from "../kmeans";
 
+var sectionalNums:number=10; //declared variable for number of sectionals, set its value to 10 (lines 509, 513)
+
+/*************************************************************/
+//We need a way to change its value based on what the user types in
+//Find that drop down "number of scetionals" button in the code 
+//and see about a way of grabbing their input when the user presses "ENTER"
+
 const input_data: Vectors = [
 	[ 38.7102179, -85.471719 ],
 	[ 39.88570199999999, -86.148265 ],
@@ -498,9 +505,9 @@ const input_data: Vectors = [
 //var output: KMeans = KMEANS(input_data, 2, "kmeans");
 
 console.log("k means++");
-var kmeans1: KMeans = KMEANS(input_data,20, "kmeans++");
+var kmeans1: KMeans = KMEANS(input_data,sectionalNums, "kmeans++");  //replaced group number itself w/ sectionalNums
 console.log(JSON.stringify(kmeans1));
 
 console.log("k means");
-var kmeans2: KMeans = KMEANS(input_data, 20, "kmeans");
+var kmeans2: KMeans = KMEANS(input_data, sectionalNums, "kmeans"); //replaced group number itself w/ sectionalNums
 console.log(JSON.stringify(kmeans2));
