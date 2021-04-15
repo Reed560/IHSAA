@@ -322,18 +322,18 @@ var kmeansplusplus = function () {
 
   /* 2. For each data point x, compute D(x), the distance between x and the nearest center that has already been
     chosen. */
-  for (i = 0; i < ps; ++i)
+  for (let i = 0; i < ps; ++i)
     D[i] = pow(distance(p0, points[i]), 2);
 
   var Dsum = D.reduce(sumReduce);
 
   /* 3. Choose one new data point at random as a new center, using a weighted probability distribution where a
     point x is chosen with probability proportional to D(x)2. (Repeated until k centers have been chosen.) */
-  for (k = 1; k < ks; ++k) {
+  for (let k = 1; k < ks; ++k) {
 
     var bestDsum = -1, bestIdx = -1;
 
-    for (i = 0; i < ntries; ++i) {
+    for (let i = 0; i < ntries; ++i) {
       var rndVal = floor(random() * Dsum);
 
       for (var n = 0; n < ps; ++n) {
@@ -346,8 +346,8 @@ var kmeansplusplus = function () {
 
       var tmpD = [];
       for (var m = 0; m < ps; ++m) {
-        cmp1 = D[m];
-        cmp2 = pow(distance(points[m], points[n]), 2);
+        var cmp1 = D[m];
+        var cmp2 = pow(distance(points[m], points[n]), 2);
         tmpD[m] = cmp1 > cmp2 ? cmp2 : cmp1;
       }
 
@@ -378,7 +378,7 @@ var kmeansplusplus = function () {
 
     centroids.push(centroid);
 
-    for (i = 0; i < ps; ++i) {
+    for (let i = 0; i < ps; ++i) {
       cmp1 = D[i];
       cmp2 = pow(distance(points[bestIdx], points[i]), 2);
       D[i] = cmp1 > cmp2 ? cmp2 : cmp1;
@@ -393,6 +393,25 @@ var updateMeans = function () {
 
   for (var k = 0; k < ks; ++k) {
     var centroid = centroids[k];
+    var sum_x = 0, sum_y = 0;
+    for (var prop in centroid.data) {
+      if (centroid.data.hasOwnProperty(prop)) {
+        sum_x += centroid.data[prop].x;
+        sum_y += centroid.data[prop].y;
+      }
+    }
+    if (sum_x > 0 && sum_y > 0) {
+      centroid.x = sum_x / centroid.items;
+      centroid.y = sum_y / centroid.items;
+    }
+  }
+
+};
+
+var updateMeans2 = function (centroid) {
+
+  for (var k = 0; k < ks; ++k) {
+    //var centroid = centroids[k];
     var sum_x = 0, sum_y = 0;
     for (var prop in centroid.data) {
       if (centroid.data.hasOwnProperty(prop)) {
@@ -544,7 +563,7 @@ var refineResult = function () {
     return count;
   };
 
-  for (var iter = 0; maxiter <= 0 || iter < maxiter; iter++) {
+  for (var iter = 0; (window.maxiter) <= 0 || iter < maxiter; iter++) {
 
     updateDistances();
     metas.sort(comp);
@@ -610,7 +629,7 @@ var refineResult = function () {
       break;
 
     /* Recompute means after reassignment. */
-    updateMeans(centroids)
+    updateMeans2(centroids);
 
   }
 

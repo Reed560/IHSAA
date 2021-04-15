@@ -1,4 +1,6 @@
+
 const KmeansLib = require('kmeans-same-size');
+var kmeans = new KmeansLib();
 var kmeans = new KmeansLib();
 const k = 10; // Groups Number
 const size = 3 // Group size
