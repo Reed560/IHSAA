@@ -4,9 +4,11 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\algorithm-typescript",
+    "\\src\\app\\app-table",
     "\\src\\app\\class-size-dd",
     "\\src\\app\\gender-dd",
     "\\src\\app\\school-year-dd"
   ],
+  "SelectedNode": "\\src\\app\\app-table\\app-table.component.ts",
   "PreviewInSolutionExplorer": false
 }

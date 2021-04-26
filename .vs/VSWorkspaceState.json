@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\IHSAA-app",
     "\\IHSAA-app\\src",
-    "\\IHSAA-app\\src\\app"
+    "\\IHSAA-app\\src\\app",
+    "\\IHSAA-app\\src\\app\\app-table"
   ],
+  "SelectedNode": "\\IHSAA-app\\src\\app\\app.component.ts",
   "PreviewInSolutionExplorer": false
 }
